@@ -1,0 +1,14 @@
+<div class="container w-75 border -3 bg-info border">
+    <h2 class="text-center">Two Way Data Binding</h2>
+<!-- <label>Enter Data</label><br>
+<input type="text" (keyup)="datachanged($event)">
+<h4>Data: {{datachanged}}</h4>
+ -->
+
+
+<h4>Using ngModel</h4>
+<label>Enter Data</label><br>
+<input type="text" [(ngModel)]="name">
+<h3>My Name is :{{name}}</h3>
+</div>
+

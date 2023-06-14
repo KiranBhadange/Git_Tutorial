@@ -1,0 +1,13 @@
+<div class="container w-75 border -3 bg-info border">
+<h2>Reactive Form</h2>
+<form [formGroup]="signUpform" (ngSubmit)="signUp()">
+   <div class="col-md-2">
+   <label for="id1">Age</label>
+<input type="text" name="lName" id="id1" class="form-control" formControlName="age">
+                <div *ngIf="age?.errors?.['ageNotMatch']" class="invalid-feedback d-block">
+                   Age Should Greater than 18
+                </div>
+               </div>
+ <!-- <button type="submit" class="btn-btn-primary mt-4" [disabled]="signUpform.invalid">signUp</button>  -->
+  </form>
+</div>              

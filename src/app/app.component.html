@@ -1,0 +1,76 @@
+<!-- <div class="container mt-5 w-50 shadow p-4">
+    <div class="row">
+      <h4 class="text-center">Template Driven Form</h4>
+    </div>
+    <form #signupForm="ngForm" (ngSubmit)="save(signupForm)">
+        <div class="mb-3">
+            <label for="id1" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="id1" name=[(ngModel)] required pattern="[a-zA-Z]{2,10}" minlength="2" #fName="ngModel">
+            <div class="row" *ngIf="fName.touched &&  fName.invalid">
+                 <div class="invalid-feedback d-block" *ngIf="fName.errors?.['required']">It is required</div>
+                  <div class="invalid-feedback d-block" *ngIf="fName.errors?.['pattern']">Please enter the valid name</div>
+                  <div class="invalid-feedback d-block" *ngIf="fName.errors?.['minlength']">Minimum 2 characters are required</div>
+            </div>
+        </div>
+          
+        <div class="mb-3">
+            <label for="id2" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="id2" name='sName' ngModel required pattern="[a-zA-Z]{2,10}"
+              minlength="2" #sName ="ngModel">
+              <div class="row" *ngIf="sName.touched &&  fName.invalid"></div>
+              <div class="invalid-feedback d-block" *ngIf="sName.errors?.['required']">It is required</div>
+             <div class="invalid-feedback d-block" *ngIf="sName.errors?.['pattern']">Please enter the valid name</div>
+             <div class="invalid-feedback d-block" *ngIf="sName.errors?.['minlength']"> 2 characters are required</div>  
+              </div> 
+            
+        <div class="mb-3">
+            <label for="id3" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="id3" name="mobNo" required ngModel pattern="[7,8,9][0-9]{9}"
+             maxlength="10" #mobNo="ngModel">
+            <div class="row" *ngIf="sName.touched &&  mobNo.invalid"></div>
+            <div class="invalid-feedback d-block" *ngIf="mobNo.errors?.['required']">It is required</div>
+           <div class="invalid-feedback d-block" *ngIf="mobNo.errors?.['pattern']">Please enter the valid number</div>
+           <div class="invalid-feedback d-block" *ngIf="mobNo.errors?.['minlength']">10 digit are required</div>  
+            </div> 
+        
+        <div class="mb-3">
+          <label for="id5" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="id5" name="email" required ngModel pattern="(/^(?=\D*\d)(?=[^a-z]*[a-z])(?=.*[$@$!%*?&])(?=[^A-Z]*[A-Z]).{8,30}$/)"
+          #email="ngModel">
+          <div class="row" *ngIf="sName.touched &&  email.invalid"></div>
+            <div class="invalid-feedback d-block" *ngIf="email.errors?.['required']"></div>
+           <div class="invalid-feedback d-block" *ngIf="email.errors?.['pattern']">Need atlestone</div>
+          
+        </div>
+      
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="pwd" required ngModel pattern="[/^(?=\D*\d)(?=[^a-z]*[a-z])(?=[^A-Z]*[A-Z]).{8}$/]"
+         maxlength="8" #pwd="ngModel">
+          <div class="row" *ngIf="sName.touched &&  pwd.invalid"></div>
+          <div class="invalid-feedback d-block" *ngIf="pwd.errors?.['required']">It is required</div>
+           <div class="invalid-feedback d-block" *ngIf="pwd.errors?.['pattern']">Please enter the valid passward</div>
+           <div class="invalid-feedback d-block" *ngIf="mobNo.errors?.['minlength']">8 digit are required</div> 
+        </div> 
+        <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">Submit</button>
+      </form> 
+      <div class="mt-5">
+         <div class="mt-1"><span class="fw-bold"> Value</span>:&nbsp;{{signupForm.value | json}}</div>
+         <div class="mt-1"> <span class="fw-bold">Touched</span>&nbsp;{{signupForm.touched}}</div>
+         <div class="mt-1"><span class="fw-bold"> Untouched</span>&nbsp;{{signupForm.untouched}}</div>
+         <div class="mt-1"><span class="fw-bold"> Dirty</span>&nbsp;{{signupForm.dirty}}</div>
+         <div class="mt-1"><span class="fw-bold"> Pristine</span>&nbsp;{{signupForm.pristine}}</div>
+         <div class="mt-1"><span class="fw-bold"> valid</span>&nbsp;{{signupForm.valid}}</div>
+         <div class="mt-1"><span class="fw-bold"> invalid</span>&nbsp;{{signupForm.invalid}}</div>
+      </div> -->
+      <!-- <app-assingment></app-assingment> -->
+      
+ <!-- <app-emali></app-emali> -->
+ <!-- <app-mock></app-mock> -->
+ <app-mockinterview></app-mockinterview>
+     
+       

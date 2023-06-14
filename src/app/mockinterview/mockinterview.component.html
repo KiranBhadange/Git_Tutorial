@@ -1,0 +1,30 @@
+<h4>Using *ngIf</h4>
+
+<div *ngIf="false">
+    <h1 [ngStyle]="{'color':'red'}">
+      Structural Directive Example
+    </h1>
+  </div>
+
+  <div *ngIf="true">
+    <h1 [ngStyle]="{'color':'green'}">
+       Structural Directive Example
+    </h1>
+  </div>
+
+  <h4>Using *ngFor</h4>
+  <div *ngFor="let item of items">
+    <p >  {{item}} </p>
+   </div>
+
+   <h4>Using *ngSwitch</h4>
+   <div [ngSwitch]="todaysDay">
+    <h4 *ngSwitchCase="'Sunday'">Today is Sunday</h4>
+    <h4 *ngSwitchCase="'Monday'">Today is Monday</h4>
+    <h4 *ngSwitchCase="'Tuesday'">Today is Tuesday</h4>
+    <h4 *ngSwitchCase="'Wednesday'">Today is Wednesday</h4>
+    <h4 *ngSwitchCase="'Thursday'">Today is Thursday</h4>
+    <h4 *ngSwitchCase="'Friday'">Today is Friday</h4>
+    <h4 *ngSwitchCase="'Saturday'">Today is Saturday</h4>
+    <h4 *ngSwitchDefault>No Match Found</h4>
+</div>
